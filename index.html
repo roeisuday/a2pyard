@@ -107,42 +107,19 @@
         <li>Free in-home consultation (about 45 minutes)</li>
         <li>No cost and no obligation</li>
         <li>We'll reach out to schedule a time that works for you</li>
+        <li>Call or email us anytime using the details below</li>
       </ul>
     </div>
 
-    <form class="lead" id="leadForm" novalidate>
-      <div class="row">
-        <label class="f">Full name<input name="full_name" autocomplete="name" required></label>
-        <label class="f">Zip code<input name="zip" inputmode="numeric" autocomplete="postal-code" maxlength="5" required></label>
-      </div>
-      <div class="row">
-        <label class="f">Mobile phone<input name="phone" type="tel" autocomplete="tel" required></label>
-        <label class="f">Email<input name="email" type="email" autocomplete="email" required></label>
-      </div>
-      <label class="f">What are you thinking for your backyard?
-        <select name="project_scope" required>
-          <option value="">Choose one</option>
-          <option>The full dream yard (outdoor kitchen, fire pit, patio cover, pavers, turf)</option>
-          <option>A few upgrades together (like pavers + a patio cover, or a deck)</option>
-          <option>One project (just pavers, turf or a patio cover)</option>
-          <option>Not sure yet, I'd love some design ideas</option>
-        </select>
-      </label>
-
-      <label class="consent">
-        <input type="checkbox" name="sms_consent_service" value="yes">
-        <span>I agree to receive text messages from Yard Culture SoCal at the phone number provided about my design request, including scheduling, appointment reminders and follow-ups. Message frequency varies. Message &amp; data rates may apply. Reply HELP for help or STOP to opt out at any time.</span>
-      </label>
-      <label class="consent">
-        <input type="checkbox" name="sms_consent_marketing" value="yes">
-        <span>I agree to receive occasional marketing text messages from Yard Culture SoCal at the phone number provided, such as backyard design ideas and seasonal offers. Up to 4 messages per month. Message &amp; data rates may apply. Reply HELP for help or STOP to opt out at any time.</span>
-      </label>
-      <p class="fine">Checking a box is optional and is not a condition of any purchase. If you don't check either box, we'll contact you by email. See our <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms of Service</a>.</p>
-
-      <button class="btn" type="submit">Get my free design</button>
-      <div class="ok" id="ok">Thanks! Your request is in. We'll reach out shortly to schedule your free in-home visit.</div>
-      <div class="err" id="err"></div>
-    </form>
+    <div class="lead">
+      <p style="margin:0 0 6px;font-weight:700">How to request your design</p>
+      <p style="margin:0 0 14px;color:var(--ink-2);font-size:15px"><strong>On this website:</strong> tap the chat bubble in the corner of the screen, enter your name and mobile number, and check the box to agree to texts. We'll text you back to set up your free design visit.</p>
+      <p style="margin:0 0 18px;color:var(--ink-2);font-size:15px"><strong>On Facebook or Instagram:</strong> tap the request button on any of our ads (or message our Facebook Page). A short form asks what you're thinking for your backyard, whether you own the home, the best time for a visit, and your name, phone, email and zip code.</p>
+      <p style="margin:0 0 8px;font-size:12px;font-weight:700;letter-spacing:1.2px;color:var(--gold-dk)">CONSENT SHOWN ON OUR FACEBOOK/INSTAGRAM FORM</p>
+      <blockquote class="consent" style="display:block;margin:0 0 12px">By tapping Submit, you agree to receive calls and text messages from Yard Culture SoCal at the number provided about your free design request, including scheduling, appointment reminders, follow-ups and occasional offers, which may be sent using automated technology. Consent is not a condition of purchase. Message frequency varies. Message &amp; data rates may apply. Reply HELP for help or STOP to opt out. See our <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms</a>.</blockquote>
+      <p class="fine">You can opt out at any time by replying STOP. Your mobile number and consent are never sold or shared with third parties for marketing.</p>
+      <a class="btn" style="display:block;text-align:center;width:100%;padding:15px" href="https://www.facebook.com/1214568135083687" target="_blank" rel="noopener">Visit Yard Culture SoCal on Facebook</a>
+    </div>
   </div>
 </section>
 
@@ -152,7 +129,7 @@
     <details><summary>Is the 3D design really free?</summary><p>Yes. The design and the in-home consultation are free, with no obligation to buy anything.</p></details>
     <details><summary>What happens at the consultation?</summary><p>We walk your yard with you for about 45 minutes, take measurements and talk about how you want to use the space. Then we create your 3D design concept.</p></details>
     <details><summary>Which areas do you serve?</summary><p>The San Fernando Valley (Encino, Sherman Oaks, Studio City, Tarzana, Woodland Hills and nearby), the Conejo Valley (Calabasas, Agoura Hills, Westlake Village, Thousand Oaks) and anywhere in greater Los Angeles.</p></details>
-    <details><summary>How do your text messages work?</summary><p>If you opt in, we text you about your design request: scheduling, reminders and follow-ups. If you also opt in to marketing texts, you may get occasional design ideas and offers. Reply STOP at any time to stop all texts, or HELP for help. Your phone number is never sold or shared with third parties for marketing.</p></details>
+    <details><summary>How do your text messages work?</summary><p>When you request a free design through our website chat or our Facebook/Instagram form and agree to texts, we text you about your request: scheduling, reminders, follow-ups and occasional offers. Message frequency varies. Reply STOP at any time to stop all texts, or HELP for help. Your phone number is never sold or shared with third parties for marketing.</p></details>
     <details><summary>Are the designs shown real projects?</summary><p>Images in our ads and on our pages are design concepts shown for illustration.</p></details>
   </div>
 </section>
@@ -169,8 +146,8 @@
       <div>
         <h4>Contact</h4>
         <p>9815 Romo St, Irving, TX 75063</p>
-        <p><a href="tel:[PHONE]">213-787-5224</a></p>
-        <p><a href="mailto:[EMAIL]">info@yardculturesocal.com</a></p>
+        <p><a href="tel:[PHONE]">[PHONE]</a></p>
+        <p><a href="mailto:[EMAIL]">[EMAIL]</a></p>
         <p>Mon–Sat, 8am–7pm</p>
       </div>
       <div>
@@ -183,31 +160,6 @@
   </div>
 </footer>
 
-<script>
-// Paste your GHL Workflow "Inbound Webhook" URL here before going live.
-const FORM_ENDPOINT = "";
-
-document.getElementById('leadForm').addEventListener('submit', async (e) => {
-  e.preventDefault();
-  const f = e.target, err = document.getElementById('err'), ok = document.getElementById('ok');
-  err.style.display = 'none';
-  const missing = [...f.querySelectorAll('[required]')].filter(el => !el.value.trim());
-  if (missing.length) { err.textContent = 'Please fill in all fields.'; err.style.display = 'block'; missing[0].focus(); return; }
-  if (!FORM_ENDPOINT) { err.textContent = 'This form is not connected yet. Please call or email us using the contact details below.'; err.style.display = 'block'; return; }
-  const data = Object.fromEntries(new FormData(f).entries());
-  data.sms_consent_service = data.sms_consent_service || 'no';
-  data.sms_consent_marketing = data.sms_consent_marketing || 'no';
-  data.consent_text_version = '2026-10-06';
-  data.source = 'website';
-  try {
-    const r = await fetch(FORM_ENDPOINT, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data) });
-    if (!r.ok) throw new Error();
-    f.querySelector('button').style.display = 'none';
-    ok.style.display = 'block';
-  } catch {
-    err.textContent = 'Something went wrong. Please try again, or call or email us below.'; err.style.display = 'block';
-  }
-});
-</script>
+<script src="https://widgets.leadconnectorhq.com/loader.js" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="6ac5d60df71147f2c253a02b" data-source="WEB_USER"></script>
 </body>
 </html>
